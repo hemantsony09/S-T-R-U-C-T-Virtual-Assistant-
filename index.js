@@ -65,16 +65,17 @@ function speakThis(message) {
         const finalText = "I am fine boss tell me how can i help you";
         speech.text = finalText;
     }
+    
     else if(message.includes('who i am')) {
         const finalText = "you are my boss and i am your assistent tell me how can i help you";
         speech.text = finalText;
     }
-
+    
     else if(message.includes('what are you doing')) {
         const finalText = "Nothig just try to helping you";
         speech.text = finalText;
     }
-    else if(message.includes('what do you think about me')) {
+    else if(message.includes('what do you think about me')||message.includes('what you think about me')) {
         const finalText = "i think you're smart funny and kind i'm lucky to be your assistant";
         speech.text = finalText;
     }
@@ -92,7 +93,7 @@ function speakThis(message) {
         const finalText = "Opening Google";
         speech.text = finalText;
     }
-    else if(message.includes('play song on youtube')) {
+    else if(message.includes('play song on youtube')||message.includes('can you play a song for me')) {
         window.open("https://www.youtube.com/watch?v=uHz2ng84hFE&list=RDuHz2ng84hFE&start_radio=1&ab_channel=T-SeriesBhaktiSagar", "_blank");
         const finalText = "play song for you boss on youtube";
         speech.text = finalText;
